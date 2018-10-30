@@ -88,7 +88,11 @@ public class Client {
             default :
                 System.out.println("operation failed");
         }
+<<<<<<< HEAD
        // System.out.println("Profit is                    " + profit);
+=======
+        //System.out.println("Profit is                    " + profit);
+>>>>>>> 00eacfd7137a17efad1bc3654d1cd6c003f05b25
         System.out.println("Your operation is " + type);
 
     }
