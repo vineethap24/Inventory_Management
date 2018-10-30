@@ -60,6 +60,7 @@ public class Client {
                 System.out.println("enter quantity");
                 quantity = scan.nextInt();
                 System.out.println("You passed");
+                System.out.println(dtoList = daoImpl.updateSell(itemName,quantity));
                 break;
 
             case "report" :
@@ -87,7 +88,7 @@ public class Client {
             default :
                 System.out.println("operation failed");
         }
-        System.out.println("Profit is                    " + profit);
+       // System.out.println("Profit is                    " + profit);
         System.out.println("Your operation is " + type);
 
     }

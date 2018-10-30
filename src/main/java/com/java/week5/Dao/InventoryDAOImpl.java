@@ -210,15 +210,13 @@ public class InventoryDAOImpl implements InventoryDAO {
         return null;
     }
 
-    public void updateSell(String itemName, int quantity) throws Exception {
+    public List<InventoryDTO> updateSell(String itemName, int quantity) {
 
         for (int i=0; i<dtoList.size(); i++) {
 
             if(dtoList.get(i).getItemName().equalsIgnoreCase(itemName)){
                 profit = ((dtoList.get(i).getSellPrice()-dtoList.get(i).getCostPrice())
                         * quantity) + (getProfit());
-            }else{
-                throw new Exception();
             }
         }
 
@@ -260,6 +258,7 @@ public class InventoryDAOImpl implements InventoryDAO {
             }//end finally try
         }//end try
 
+        return dtoList;
     }
 
     public static double getProfit() {

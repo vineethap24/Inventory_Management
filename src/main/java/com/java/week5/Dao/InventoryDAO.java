@@ -16,7 +16,7 @@ public interface InventoryDAO {
     public List<InventoryDTO> create(String itemName,double costprice,double sellprice);
     public List<InventoryDTO> deleteInventoryDetails(String itemName);
     public List<InventoryDTO> updateBuy(String itemName, int quantity);
-    public void updateSell(String itemName, int quantity) throws Exception;
+    public List<InventoryDTO> updateSell(String itemName, int quantity) throws Exception;
 
 
 }
