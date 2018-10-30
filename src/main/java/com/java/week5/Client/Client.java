@@ -87,7 +87,7 @@ public class Client {
             default :
                 System.out.println("operation failed");
         }
-        System.out.println("Profit is                    " + profit);
+        //System.out.println("Profit is                    " + profit);
         System.out.println("Your operation is " + type);
 
     }
