@@ -1,0 +1,9 @@
+com\assignment\dao\InventoryDAO.class
+com\assignment\Log4j\Log4j.class
+com\assignment\dto\InventoryDTO.class
+com\assignment\dao\InventoryDAOImpl.class
+com\assignment\service\InventoryServiceImpl.class
+com\assignment\service\InventoryService.class
+com\assignment\client\Client.class
+com\assignment\Servlet\CreateInventoryServlet.class
+com\assignment\Servlet\UpdateBuyInventoryServlet.class
